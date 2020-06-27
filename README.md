@@ -90,6 +90,6 @@ Self-explanatory. If you specify a broad time range, but only a small part of it
  
 Sample output is shown below:
  
-![](screenshot_graph.PNG) 
+![](screenshot_graph.png) 
  
  
