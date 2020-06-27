@@ -30,7 +30,7 @@ Be sure you can connect to the target database in an R session before trying to 
  
 You can run the app same as any R shiny app, by opening server.R or ui.R in RStudio and pressing the "Run app" button. When you do that, should see something like:
  
-![](/Users/nsavvinv/Documents/GitHub/ashviewer/screenshot_initial_page.PNG)  
+![](screenshot_initial_page.PNG)  
  
 Enter your username, database password, and the database connect string (e.g. host:port/service). If you are connecting to an Oracle Autonomous Database on the cloud, you need your wallet to be properly configured, this  [link](https://www.linkedin.com/pulse/connecting-rsudio-oracle-autonomous-database-via-anton-semchishen/) may help you with this.
  
@@ -90,6 +90,6 @@ Self-explanatory. If you specify a broad time range, but only a small part of it
  
 Sample output is shown below:
  
-![](/Users/nsavvinv/Documents/GitHub/ashviewer/screenshot_graph.PNG) 
+![](screenshot_graph.PNG) 
  
  
