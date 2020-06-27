@@ -17,14 +17,14 @@ get_ash_query <- function(category, groupby=category, alias=category, filter="1=
  
   ashQueryText <- "with a as
   (
-    select sample_time-to_dsinterval('0 07:00:00') t,
+    select sample_time t,
     nvl(:category:, ':nulls:') :alias:,
     sum(nvl(:weight:,0)) x
     from :table: ash
     where 1=1
     and :filter:
-    and sample_time-to_dsinterval('0 07:00:00') between timestamp':t1:' and timestamp':t2:'
-    group by sample_time-to_dsinterval('0 07:00:00'), :groupby:
+    and sample_time between timestamp':t1:' and timestamp':t2:'
+    group by sample_time, :groupby:
     order by t, :category:
   )
   select trunc(t, ':res:') t, :alias:, avg(x) :ytitle:

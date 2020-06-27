@@ -7,9 +7,7 @@ fluidPage(
     column(3,
            textInput("txtUsername", "User Name:", "username"),
            passwordInput("pwdDatabase", "Password:"),
-           selectizeInput("txtDatabase", "Database:",
-                          choices=c(dbname="connect.string"
-                          )
+           textInput("txtDatabase", "Database:", "(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.uk-london-1.oraclecloud.com))(connect_data=(service_name=mwrsyguheaj9w3v_myatp_high.atp.oraclecloud.com))(security=(ssl_server_cert_dn=\"CN=adwc.eucom-central-1.oraclecloud.com,OU=Oracle BMCS FRANKFURT,O=Oracle Corporation,L=Redwood City,ST=California,C=US\")))"
            ),
            fluidRow(
              column(4,
