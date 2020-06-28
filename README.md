@@ -21,6 +21,7 @@ Following packages are necessary to run the ASH viewer:
 - ggplot2
 - tidyr
 - reshape2
+- shinyjs
 
 Installing most of them is very straighforward (install.packages(<list of packages>)). Depending on your platform, you may need spend some time with ROracle as it needs to be integrated with the Oracle client for the app to work.
 

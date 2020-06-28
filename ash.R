@@ -41,7 +41,11 @@ get_ash_query <- function(category, groupby=category, alias=category, filter="1=
   }
  
   ytitle <- gsub('[/,0-9]', '', ytitle)
- 
+
+  if(grepl(x=weight, pattern="^delta")){
+    weight <- paste0(weight, "*1e6/delta_time")    
+  }
+
   ashQueryText <- gsub(":weight:", weight, ashQueryText)
   ashQueryText <- gsub(":res:", res, ashQueryText)
   ashQueryText <- gsub(":ytitle:", ytitle, ashQueryText)
