@@ -47,7 +47,9 @@ This checkbox toggles between GV$ACTIVE_SESSION_HISTORY view (containing only re
 ### What to plot
  
 In contrast with traditional OEM performance graphs, ASH viewer utility allows one to visualize not only average active sessions, but also read/write I/O (in terms of requests per second or megabytes per second), as well as TEMP and PGA allocations or even interconnect traffic.
- 
+
+Bear in mind that metrics other than activities can only be used as some rough guidance and not as an accurate measurement due to the sampling nature of ASH data, and sampling criteria (only active sessions are being sampled). E.g. contributions to PGA or TEMP usage from sessions that remained idle during the period of interest won't be captured. 
+
 ### Filter
  
 Any valid SQL expression can be used there (without WHERE keyword), including an uncorrelated scalar subquery, e.g.
