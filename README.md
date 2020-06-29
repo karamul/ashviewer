@@ -2,7 +2,7 @@
 
 ### Introduction
  
-ASH viewer is a utility for interactively visualizing contents of Active Session History for Oracle databases. It's written on R shiny and allows one to connect to a database and view database activity broken down by wait event class (or by some other criteria). It has some similarity to Oracle Enterprise Manager (OEM) performance page plots commonly used for Oracle database performance monitoring and troubleshooting, but is more flexible.
+ASH viewer is a utility for interactively visualizing contents of Active Session History for Oracle databases. It's written on R shiny and allows one to connect to a database and view database activity and other metrics broken down by wait event class (or by some other criteria). It has some similarity to Oracle Enterprise Manager (OEM) performance page plots commonly used for Oracle database performance monitoring and troubleshooting, but is more flexible.
 
 ### R shiny
 
@@ -94,5 +94,10 @@ Self-explanatory. If you specify a broad time range, but only a small part of it
 Sample output is shown below:
  
 ![](screenshot_graph.png) 
+
+### License and distribution
+
+Feel free to use, modify and redistribute but please add a reference to the original. Keep in mind that the software comes as is with absolutely no warranty.
+
  
  
